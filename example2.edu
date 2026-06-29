@@ -1,0 +1,20 @@
+// example2.edu — Arrays and while loops
+
+array<int> scores[5] = {85, 92, 78, 96, 61};
+
+int i = 0;
+int total = 0;
+while (i < 5) {
+    total = total + scores[i];
+    i = i + 1;
+}
+
+int avg = total / 5;
+print(total);
+print(avg);
+
+if (avg >= 80) {
+    print("Grade: B or above");
+} else {
+    print("Grade: Below B");
+}

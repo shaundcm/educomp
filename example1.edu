@@ -1,0 +1,21 @@
+// example1.edu — Basic variables, arithmetic, if/else
+int x = 10;
+int y = 3;
+
+int sum = x + y;
+int diff = x - y;
+int prod = x * y;
+int quot = x / y;
+int rem = x % y;
+
+print(sum);
+print(diff);
+print(prod);
+print(quot);
+print(rem);
+
+if (x > y) {
+    print("x is greater");
+} else {
+    print("y is greater");
+}

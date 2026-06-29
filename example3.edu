@@ -1,0 +1,35 @@
+// example3.edu — Functions and recursion
+
+func fib(int n): int {
+    if (n <= 1) {
+        return n;
+    } else {
+        return fib(n - 1) + fib(n - 2);
+    }
+}
+
+func isPrime(int n): bool {
+    if (n < 2) {
+        return false;
+    }
+    int i = 2;
+    while (i * i <= n) {
+        if (n % i == 0) {
+            return false;
+        }
+        i = i + 1;
+    }
+    return true;
+}
+
+// Print first 10 Fibonacci numbers
+int k = 0;
+while (k < 10) {
+    print(fib(k));
+    k = k + 1;
+}
+
+// Check primality
+print(isPrime(17));
+print(isPrime(18));
+print(isPrime(97));
